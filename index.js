@@ -4,7 +4,6 @@
 // 1. Write a JavaScript program to display the current day and time in the following format.
 // Sample Output : Today is : Tuesday.
 // Current time is : 10 PM : 30 : 38
-
 function ex1(){
         var d = new Date();
         function todayIs(){
@@ -35,7 +34,6 @@ function ex1(){
 }
 
 // 2. Write a JavaScript program to print the contents of the current window.
-
 function ex2(){
     window.print()
 };
@@ -43,7 +41,6 @@ function ex2(){
 // 3. Write a JavaScript program to get the current date.  Go to the editor
 // Expected Output :
 // mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy
-
 function ex3(){
     var d = new Date();
     var day = d.getDate();
@@ -53,3 +50,8 @@ function ex3(){
     var year = d.getFullYear();
     document.getElementById("ex3").innerHTML = day + "/" + month + "/" + year;
 };
+
+// 4. Write a JavaScript program to find the area of a triangle where lengths of the three of its sides are 5, 6, 7. 
+function ex4(){
+    
+}
