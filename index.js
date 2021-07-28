@@ -57,7 +57,18 @@ function ex4(){
     var s2 = document.getElementById("s2").value;
     var s3 = document.getElementById("s3").value;
     var hp = (s1+s2+s3)/2;
-    var a = hp*(hp-s1)*(hp-s2)*(hp-s3);
+    var a = hp*(hp-s1)*(hp-s2)*(hp-s3); //Heron's formula
     var area = Math.sqrt(a);
-    document.getElementById("ex4").innerHTML = area;
+    var areaString = area.toString();
+    document.getElementById("ex4square").innerHTML = areaString;
 };
+
+
+var s1 = 5
+var s2 = 6
+var s3 = 7
+var hp = (s1+s2+s3)/2;
+var a = hp*(hp-s1)*(hp-s2)*(hp-s3);
+var area = Math.sqrt(a);
+console.log(area)
+
