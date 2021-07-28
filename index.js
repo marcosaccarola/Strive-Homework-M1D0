@@ -17,6 +17,5 @@ function todayIs(){
     weekday[5] = "Friday"
     weekday[6] = "Saturday"
     var n = weekday[d.getDay()];
-    return n
+    document.getElementById("ex1").innerHTML = "Today is : " + n 
 }
-console.log(todayIs())
