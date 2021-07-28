@@ -13,10 +13,10 @@ function todayIs(){
     weekday[1] = "Monday"
     weekday[2] = "Tuesday"
     weekday[3] = "Wednesday"
-    weekday[4] = ""
-    weekday[5] = 
-    weekday[6] =
-    var n = d.getDay();
+    weekday[4] = "Thursday"
+    weekday[5] = "Friday"
+    weekday[6] = "Saturday"
+    var n = weekday[d.getDay()];
     return n
 }
 console.log(todayIs())
