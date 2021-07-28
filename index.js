@@ -53,22 +53,30 @@ function ex3(){
 
 // 4. Write a JavaScript program to find the area of a triangle where lengths of the three of its sides are 5, 6, 7. 
 function ex4(){
-    var s1 = document.getElementById("s1").value;
-    var s2 = document.getElementById("s2").value;
-    var s3 = document.getElementById("s3").value;
+    var s1 = Number(document.getElementById("s1").value);
+    var s2 = Number(document.getElementById("s2").value);
+    var s3 = Number(document.getElementById("s3").value);  
     var hp = (s1+s2+s3)/2;
     var a = hp*(hp-s1)*(hp-s2)*(hp-s3); //Heron's formula
     var area = Math.sqrt(a);
-    var areaString = area.toString();
-    document.getElementById("ex4square").innerHTML = areaString;
+    document.getElementById("ex4square").innerHTML = area;
 };
 
+
+// 5. Write a JavaScript program to rotate the string 'w3resource' in right direction by periodically removing one letter from the end of the string and attaching it to the front.
+function ex5(){
+    var z = document.getElementById("textToReverse")
+    var a = z.split("");
+    var b = a.reverse();
+    var c = b.join();
+    document.getElementById("ex5").innerHTML = c;
+};
 
 var s1 = 5
 var s2 = 6
 var s3 = 7
 var hp = (s1+s2+s3)/2;
-var a = hp*(hp-s1)*(hp-s2)*(hp-s3);
+console.log(hp);
+var a = hp*(hp-s1)*(hp-s2)*(hp-s3); //Heron's formula
 var area = Math.sqrt(a);
 console.log(area)
-
