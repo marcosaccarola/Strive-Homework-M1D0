@@ -53,5 +53,11 @@ function ex3(){
 
 // 4. Write a JavaScript program to find the area of a triangle where lengths of the three of its sides are 5, 6, 7. 
 function ex4(){
-    
-}
+    var s1 = document.getElementById("s1").value;
+    var s2 = document.getElementById("s2").value;
+    var s3 = document.getElementById("s3").value;
+    var hp = (s1+s2+s3)/2;
+    var a = hp*(hp-s1)*(hp-s2)*(hp-s3);
+    var area = Math.sqrt(a);
+    document.getElementById("ex4").innerHTML = area;
+};
