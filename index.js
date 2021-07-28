@@ -72,11 +72,3 @@ function ex5(){
     document.getElementById("ex5").innerHTML = c;
 };
 
-var s1 = 5
-var s2 = 6
-var s3 = 7
-var hp = (s1+s2+s3)/2;
-console.log(hp);
-var a = hp*(hp-s1)*(hp-s2)*(hp-s3); //Heron's formula
-var area = Math.sqrt(a);
-console.log(area)
