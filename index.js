@@ -34,6 +34,10 @@ function ex1(){
     whatTime();
 }
 
+// 2. Write a JavaScript program to print the contents of the current window.
 
+function ex2(){
+    window.print()
+}
 
 
