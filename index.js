@@ -38,6 +38,18 @@ function ex1(){
 
 function ex2(){
     window.print()
-}
+};
 
+// 3. Write a JavaScript program to get the current date.  Go to the editor
+// Expected Output :
+// mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy
 
+function ex3(){
+    var d = new Date();
+    var day = d.getDate();
+    day = day < 10 ? "0"+day : day;
+    var month = d.getMonth()+1;
+    month = month < 10 ? "0"+month : month;
+    var year = d.getFullYear();
+    document.getElementById("ex3").innerHTML = day + "/" + month + "/" + year;
+};
