@@ -88,3 +88,7 @@ function ex5alt(){
 };
 
 // 6. Write a JavaScript program to determine whether a given year is a leap year in the Gregorian calendar.
+function ex6(){
+    var a = Number(getElementById("ex6input").value);
+    
+}
