@@ -73,13 +73,11 @@ function ex5(){
 };
 function ex5bis(){
     var a = String(document.getElementById("ex5result").value);
-    console.log(a)
     var b = a.slice(-1); // taking last letter
     var c = a.slice(0, -1); // taking string without last letter (starting point, positon to remove)
     var d = b.concat(c);
     document.getElementById("ex5result").innerHTML = d;
 }
-
 // ...and a program to reverse a word using arrays.
 function ex5alt(){
     var a = String(document.getElementById("textToReverse").value);
@@ -88,3 +86,5 @@ function ex5alt(){
     var d = c.join();
     document.getElementById("ex5alt").innerHTML = d;
 };
+
+// 6. Write a JavaScript program to determine whether a given year is a leap year in the Gregorian calendar.
