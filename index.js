@@ -65,18 +65,26 @@ function ex4(){
 
 // 5. Write a JavaScript program to rotate the string 'w3resource' in right direction by periodically removing one letter from the end of the string and attaching it to the front.
 function ex5(){
-var a = String(getElementById("ex5input").value);
-var b = a.slice(-1); // slicing last letter
-var c = a.slice(0, -1); // removing last letter (starting point, positon to remove)
-var d = b.concat(c);
-document.getElementById("ex5result").innerHTML = d;
+    var a = String(document.getElementById("ex5input").value);
+    var b = a.slice(-1); // taking last letter
+    var c = a.slice(0, -1); // taking string without last letter (starting point, positon to remove)
+    var d = b.concat(c);
+    document.getElementById("ex5result").innerHTML = d;
 };
+function ex5bis(){
+    var a = String(document.getElementById("ex5result").value);
+    console.log(a)
+    var b = a.slice(-1); // taking last letter
+    var c = a.slice(0, -1); // taking string without last letter (starting point, positon to remove)
+    var d = b.concat(c);
+    document.getElementById("ex5result").innerHTML = d;
+}
 
 // ...and a program to reverse a word using arrays.
-function ex5bis(){
+function ex5alt(){
     var a = String(document.getElementById("textToReverse").value);
     var b = a.split("");
     var c = b.reverse();
     var d = c.join();
-    document.getElementById("ex5bis").innerHTML = d;
+    document.getElementById("ex5alt").innerHTML = d;
 };
