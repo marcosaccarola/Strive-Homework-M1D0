@@ -218,5 +218,8 @@ function ex19(){
 
 // 20. Write a JavaScript program to check from two given integers, whether one is positive and another one is negative.
 function ex20(){
-    
+    var a=Number(document.getElementById("ex20input1").value);
+    var b=Number(document.getElementById("ex20input2").value);
+    var c=(a<0&&b>0)||(a>0&&b<0)?true:false;
+    document.getElementById("ex20return").innerHTML=c;
 };
