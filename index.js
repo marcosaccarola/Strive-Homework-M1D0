@@ -129,6 +129,6 @@ function ex9(){
     if (today.getMonth()===11&&today.getDay()>25) {christmasDay.setFullYear(christmasDay.getFullYear()+1)};
     console.log(christmasDay);
     var daysLeft=Math.round((christmasDay-today)/aDay);
-    return daysLeft;
+    document.getElementById("ex9return").innerHTML=daysLeft+(" days left to Christmas!");
 };
 console.log(ex9())
