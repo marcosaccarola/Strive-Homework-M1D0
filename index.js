@@ -109,12 +109,12 @@ c=b===0?true:false;
 
 // 8. Write a JavaScript program where the program takes a random integer between 1 to 10, the user is then prompted to input a guess number. If the user input matches with guess number, the program will display a message "Good Work" otherwise display a message "Not matched". 
 function ex8(){
-    var a=1;
+    var a= Number(document.getElementById("ex8input").value);
     var b=Math.floor(Math.random()*10+1);
-    console.log(b);
     var yes="Good Work";
     var not="Not matched";
     var c=a===b?yes:not;
-    return c;
+    document.getElementById("ex8randomNumber").innerHTML = b;
+    document.getElementById("ex8return").innerHTML = c;
 }
 console.log(ex8())
