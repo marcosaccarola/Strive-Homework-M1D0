@@ -123,12 +123,10 @@ function ex8(){
 function ex9(){
     var aDay=1000*60*60*24
     var today=new Date();
-    console.log(today);
     var christmasDay=new Date(today.getFullYear(), 11, 26);
-    console.log(christmasDay);
     if (today.getMonth()===11&&today.getDay()>25) {christmasDay.setFullYear(christmasDay.getFullYear()+1)};
-    console.log(christmasDay);
     var daysLeft=Math.round((christmasDay-today)/aDay);
     document.getElementById("ex9return").innerHTML=daysLeft+(" days left to Christmas!");
 };
-console.log(ex9())
+
+// 10. Write a JavaScript program to calculate multiplication and division of two numbers (input from user).
