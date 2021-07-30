@@ -95,4 +95,9 @@ function ex6(){
 }
 
 // 7. Write a JavaScript program to find 1st January is being a Sunday between 2014 and 2050.
-
+a=new Date();
+console.log(a)
+b=a.getDay();
+console.log(b)
+c=b===0?true:false
+console.log(c)
