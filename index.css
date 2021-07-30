@@ -3,3 +3,7 @@ p {
   font-weight: bold;
   color: gray;
 }
+
+.undone {
+  color: red;
+}
