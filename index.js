@@ -226,5 +226,8 @@ function ex20(){
 
 // 21. Write a JavaScript program to create a new string adding "Py" in front of a given string. If the given string begins with "Py" then return the original string.
 function ex21(){
-    
+    var a=String(document.getElementById("ex21input").value);
+    var b=a.slice(0,2);
+    var c=b==="Py"?c=a:c="Py"+a;
+    document.getElementById("ex21return").innerHTML=c
 };
