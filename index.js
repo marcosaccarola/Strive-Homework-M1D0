@@ -118,3 +118,17 @@ function ex8(){
     document.getElementById("ex8return").innerHTML = c;
     c===yes?document.getElementById("ex8return").classList.add("green"):document.getElementById("ex8return").classList.add("red");
 };
+
+// 9. Write a JavaScript program to calculate days left until next Christmas.
+function ex9(){
+    var aDay=1000*60*60*24
+    var today=new Date();
+    console.log(today);
+    var christmasDay=new Date(today.getFullYear(), 11, 26);
+    console.log(christmasDay);
+    if (today.getMonth()===11&&today.getDay()>25) {christmasDay.setFullYear(christmasDay.getFullYear()+1)};
+    console.log(christmasDay);
+    var daysLeft=Math.round((christmasDay-today)/aDay);
+    return daysLeft;
+};
+console.log(ex9())
