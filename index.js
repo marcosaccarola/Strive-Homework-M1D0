@@ -200,3 +200,8 @@ function ex17(){
     var c=b>19?3*b:1*b;
     document.getElementById("ex17return").innerHTML=c;
 };
+
+// 18. Write a JavaScript program to check two given numbers and return true if one of the number is 50 or if their sum is 50.
+function ex18(){
+    
+};
