@@ -18,7 +18,7 @@ function ex1(){
             var n = weekday[d.getDay()];
             document.getElementById("ex1Day").innerHTML = "Today is : " + n + "."
         }
-        function whatTime() {    
+        function whatTime() {
             var h = d.getHours();
             var ampm = h >= 12 ? " PM" : " AM";
             h = h % 12;
@@ -51,11 +51,11 @@ function ex3(){
     document.getElementById("ex3").innerHTML = day + "/" + month + "/" + year;
 };
 
-// 4. Write a JavaScript program to find the area of a triangle where lengths of the three of its sides are 5, 6, 7. 
+// 4. Write a JavaScript program to find the area of a triangle where lengths of the three of its sides are 5, 6, 7.
 function ex4(){
     var s1 = Number(document.getElementById("s1").value);
     var s2 = Number(document.getElementById("s2").value);
-    var s3 = Number(document.getElementById("s3").value);  
+    var s3 = Number(document.getElementById("s3").value);
     var hp = (s1+s2+s3)/2;
     var a = hp*(hp-s1)*(hp-s2)*(hp-s3); //Heron's formula
     var area = Math.sqrt(a);
@@ -89,9 +89,8 @@ function ex5alt(){
 
 // 6. Write a JavaScript program to determine whether a given year is a leap year in the Gregorian calendar.
 function ex6(){
-    // var a = Number(getElementById("ex6input").value);
-    var a = 1929
-    b = a%4===0?(a%100===0?(a%400?true:false):true):false
-    return b
+    var a = Number(document.getElementById("ex6input").value);
+    b = a%4===0?(a%100===0?(a%400?true:false):true):false;
+    document.getElementById("ex6result").innerHTML = b;
 }
-console.log(ex6())
+
