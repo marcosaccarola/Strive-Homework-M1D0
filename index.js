@@ -234,5 +234,9 @@ function ex21(){
 
 // 22. Write a JavaScript program to remove a character at the specified position of a given string and return the new string.
 function ex22(){
-
+    var a=String(document.getElementById("ex22input1").value);
+    var b=Number(document.getElementById("ex22input2").value);
+    var c=a.substring(b-1,b);
+    var d=a.replace(c,"");
+    document.getElementById("ex22return").innerHTML=d;
 };
