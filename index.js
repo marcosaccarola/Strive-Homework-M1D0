@@ -144,3 +144,13 @@ function ex10divide(){
 };
 
 // 11. Write a JavaScript program to convert temperatures to and from Celsius, Fahrenheit.
+function ex11toCelsius(){
+    var a=Number(document.getElementById("ex11input").value);
+    var b=Math.round((a-32)*(5/9));
+    document.getElementById("ex11return").innerHTML=b;
+};
+function ex11toFahrenheit(){
+    var a=Number(document.getElementById("ex11input").value);
+    var b=Math.round(a*(9/5)+32);
+    document.getElementById("ex11return").innerHTML=b;
+}
