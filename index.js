@@ -208,3 +208,8 @@ function ex18(){
     var c=a===50||b===50||a+b===50?true:false;
     document.getElementById("ex18return").innerHTML=c;
 };
+
+// 19. Write a JavaScript program to check whether a given integer is within 20 of 100 or 400.
+function ex19(){
+    
+};
