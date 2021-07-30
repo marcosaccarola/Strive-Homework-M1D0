@@ -174,4 +174,9 @@ function ex14(){
     var b=a.split(".");
     var c=b[1];
     document.getElementById("ex14result").innerHTML=c;
-}
+};
+
+// 15. Write a JavaScript program to get the difference between a given number and 13, if the number is greater than 13 return double the absolute difference.
+function ex15(){
+    
+};
