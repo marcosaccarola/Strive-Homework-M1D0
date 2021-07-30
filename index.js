@@ -211,5 +211,7 @@ function ex18(){
 
 // 19. Write a JavaScript program to check whether a given integer is within 20 of 100 or 400.
 function ex19(){
-    
+    var a=Number(document.getElementById("ex19input").value);
+    var b=a>=20&&a<=100||a===400?true:false;
+    document.getElementById("ex19return").innerHTML=b;
 };
