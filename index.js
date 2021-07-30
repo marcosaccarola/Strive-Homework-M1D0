@@ -156,3 +156,6 @@ function ex11toFahrenheit(){
 };
 
 // 12. Write a JavaScript program to get the website URL (loading page).
+function ex12(){
+    document.getElementById("ex12return").innerHTML=window.location.href;
+}
