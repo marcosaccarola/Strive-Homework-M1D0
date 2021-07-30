@@ -142,3 +142,5 @@ function ex10divide(){
     var c=a/b;
     document.getElementById("ex10return").innerHTML="The result is: "+c;
 };
+
+// 11. Write a JavaScript program to convert temperatures to and from Celsius, Fahrenheit.
