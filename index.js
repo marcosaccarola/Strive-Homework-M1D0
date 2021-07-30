@@ -116,5 +116,5 @@ function ex8(){
     var c=a===b?yes:not;
     document.getElementById("ex8randomNumber").innerHTML = b;
     document.getElementById("ex8return").innerHTML = c;
-}
-console.log(ex8())
+    c===yes?document.getElementById("ex8return").classList.add("green"):document.getElementById("ex8return").classList.add("red");
+};
