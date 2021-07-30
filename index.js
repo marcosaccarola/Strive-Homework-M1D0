@@ -243,5 +243,9 @@ function ex22(){
 
 // 23. Write a JavaScript program to create a new string from a given string changing the position of first and last characters. The string length must be greater than or equal to 1.
 function ex23(){
-    
+    var a=String(document.getElementById("ex23input").value);
+    var b=a.substr(0,1);
+    var c=a.substr(-1,1);
+    console.log(a);
+    document.getElementById("ex23return").innerHTML=a;
 };
