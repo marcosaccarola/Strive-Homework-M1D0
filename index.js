@@ -187,5 +187,8 @@ function ex15(){
 
 // 16. Write a JavaScript program to compute the sum of the two given integers. If the two values are same, then returns triple their sum. 
 function ex16(){
-    
+    var a=Number(document.getElementById("ex16input1").value);
+    var b=Number(document.getElementById("ex16input2").value);
+    var c=a===b?3*(a+b):a+b;
+    document.getElementById("ex16return").innerHTML=c;
 };
