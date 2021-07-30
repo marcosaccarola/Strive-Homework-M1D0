@@ -184,3 +184,8 @@ function ex15(){
     console.log(b);
     document.getElementById("ex15return").innerHTML=b;
 };
+
+// 16. Write a JavaScript program to compute the sum of the two given integers. If the two values are same, then returns triple their sum. 
+function ex16(){
+    
+};
