@@ -203,5 +203,8 @@ function ex17(){
 
 // 18. Write a JavaScript program to check two given numbers and return true if one of the number is 50 or if their sum is 50.
 function ex18(){
-    
+    var a=Number(document.getElementById("ex18input1").value);
+    var b=Number(document.getElementById("ex18input2").value);
+    var c=a===50||b===50||a+b===50?true:false;
+    document.getElementById("ex18return").innerHTML=c;
 };
