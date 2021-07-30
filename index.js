@@ -170,5 +170,8 @@ function ex13(){
 
 // 14. Write a JavaScript exercise to get the extension of a filename.
 function ex14(){
-    
+    var a=String(document.getElementById("ex14input").value);
+    var b=a.split(".");
+    var c=b[1];
+    document.getElementById("ex14result").innerHTML=c;
 }
