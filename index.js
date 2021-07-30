@@ -130,3 +130,9 @@ function ex9(){
 };
 
 // 10. Write a JavaScript program to calculate multiplication and division of two numbers (input from user).
+function ex10(){
+    var a=Number(document.getElementById("1stNumber").value);
+    var b=Number(document.getElementById("2ndNumber").value);
+    var c=a*b;
+    document.getElementById("ex10return").innerHTML=c;
+};
