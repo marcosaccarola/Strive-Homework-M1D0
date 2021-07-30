@@ -166,4 +166,9 @@ function ex13(){
     var n = String(document.getElementById("ex13inputName").value);
     this[var_name] = n;
     document.getElementById("ex13return").innerHTML="var "+n+" = "+var_name+";";
+};
+
+// 14. Write a JavaScript exercise to get the extension of a filename.
+function ex14(){
+    
 }
