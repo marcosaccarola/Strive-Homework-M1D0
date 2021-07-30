@@ -153,4 +153,6 @@ function ex11toFahrenheit(){
     var a=Number(document.getElementById("ex11input").value);
     var b=Math.round(a*(9/5)+32);
     document.getElementById("ex11return").innerHTML=b;
-}
+};
+
+// 12. Write a JavaScript program to get the website URL (loading page).
