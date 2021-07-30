@@ -161,3 +161,9 @@ function ex12(){
 };
 
 // 13. Write a JavaScript exercise to create a variable using a user-defined name.
+function ex13(){
+    const var_name = String(document.getElementById("ex13inputName").value);
+    const n = String(document.getElementById("ex13inputValue").value);
+    this[var_name] = n;
+    document.getElementById("ex13return").innerHTML="var "+var_name+" = "+n+";";
+}
