@@ -195,5 +195,8 @@ function ex16(){
 
 // 17. Write a JavaScript program to compute the absolute difference between a specified number and 19. Returns triple their absolute difference if the specified number is greater than 19.
 function ex17(){
-
+    var a=Number(document.getElementById("ex17input").value);
+    var b=Math.abs(a-19);
+    var c=b>19?3*b:1*b;
+    document.getElementById("ex17return").innerHTML=c;
 };
