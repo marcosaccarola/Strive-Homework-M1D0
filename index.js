@@ -281,5 +281,8 @@ function ex27(){
 
 // 28. Write a JavaScript program to check whether two given integer values are in the range 50..99 (inclusive). Return true if either of them are in the said range.
 function ex28(){
-    
+    var a=Number(document.getElementById("ex28input1").value);
+    var b=Number(document.getElementById("ex28input2").value);
+    var c=((a>=50&&99>=a)&&(b>=50&&99>=b))?true:false;
+    document.getElementById("ex28return").innerHTML=c;
 };
