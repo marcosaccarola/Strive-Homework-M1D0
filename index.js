@@ -263,3 +263,8 @@ function ex25(){
     var b=a%3===0||a%7===0?true:false;
     document.getElementById("ex25result").innerHTML=b;
 };
+
+// 26. Write a JavaScript program to create a new string from a given string taking the last 3 characters and added at both the front and back. The string length must be 3 or more.
+function ex26(){
+    
+};
