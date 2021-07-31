@@ -286,3 +286,12 @@ function ex28(){
     var c=((a>=50&&99>=a)&&(b>=50&&99>=b))?true:false;
     document.getElementById("ex28return").innerHTML=c;
 };
+
+// 29. Write a JavaScript program to check whether three given integer values are in the range 50..99 (inclusive). Return true if one or more of them are in the said range.
+function ex29(){
+    var a=Number(document.getElementById("ex29input1").value);
+    var b=Number(document.getElementById("ex29input2").value);
+    var c=Number(document.getElementById("ex29input3").value);
+    var d=((c>=50&&99>=c)||(b>=50&&99>=b)||(a>=50&&99>=a))?true:false;
+    document.getElementById("ex29return").innerHTML=d;
+};
