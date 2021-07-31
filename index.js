@@ -256,3 +256,10 @@ function ex24(){
     var b=a.charAt(0);
     document.getElementById("ex24result").innerHTML=b+a+b;
 };
+
+// 25. Write a JavaScript program to check whether a given positive number is a multiple of 3 or a multiple of 7.
+function ex25(){
+    var a=Number(document.getElementById("ex25input").value);
+    var b=a%3===0||a%7===0?true:false;
+    document.getElementById("ex25result").innerHTML=b;
+};
