@@ -303,3 +303,8 @@ function ex30(){
     var c=b==="Script"?a.substring(0,4):a;
     document.getElementById("ex30return").innerHTML=c;
 };
+
+// 31. Write a JavaScript program to find the largest of three given integers.
+function ex31(){
+    
+};
