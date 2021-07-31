@@ -252,5 +252,7 @@ function ex23() {
 
 // 24. Write a JavaScript program to create a new string from a given string with the first character of the given string added at the front and back.
 function ex24(){
-    
+    var a=String(document.getElementById("ex24input").value);
+    var b=a.charAt(0);
+    document.getElementById("ex24result").innerHTML=b+a+b;
 };
