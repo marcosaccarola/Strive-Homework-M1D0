@@ -270,3 +270,8 @@ function ex26(){
     var b=a.substr(-3,3);
     document.getElementById("ex26return").innerHTML=b+a+b;
 };
+
+// 27. Write a JavaScript program to check whether a string starts with 'Java' and false otherwise.
+function ex27(){
+    
+};
