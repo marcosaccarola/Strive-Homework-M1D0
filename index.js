@@ -246,6 +246,6 @@ function ex23(){
     var a=String(document.getElementById("ex23input").value);
     var b=a.substr(0,1);
     var c=a.substr(-1,1);
-    console.log(a);
+    
     document.getElementById("ex23return").innerHTML=a;
 };
