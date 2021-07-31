@@ -273,5 +273,8 @@ function ex26(){
 
 // 27. Write a JavaScript program to check whether a string starts with 'Java' and false otherwise.
 function ex27(){
-    
+    var a=String(document.getElementById("ex27input").value);
+    var b=a.substr(0,4);
+    var c=b==="Java"?true:false;
+    document.getElementById("ex27return").innerHTML=c;
 };
