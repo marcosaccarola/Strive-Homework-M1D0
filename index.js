@@ -306,5 +306,9 @@ function ex30(){
 
 // 31. Write a JavaScript program to find the largest of three given integers.
 function ex31(){
-    
+    var a=Number(document.getElementById("ex31input1").value);
+    var b=Number(document.getElementById("ex31input2").value);
+    var c=Number(document.getElementById("ex31input3").value);
+    var d=Math.max(a,b,c);
+    document.getElementById("ex31result").innerHTML=d;
 };
