@@ -411,5 +411,8 @@ function ex39(){
 
 // 40. Write a JavaScript program to check from two given integers whether one of them is 8 or their sum or difference is 8
 function ex40(){
-    
+    var a=Number(document.getElementById("ex40in1").value);
+    var b=Number(document.getElementById("ex40in2").value);
+    var c=(a===8)||(b===8)||(a-b===8)||(b-a===8)||(a+b===8)?true:false;
+    document.getElementById("ex40return").innerHTML=c;
 };
