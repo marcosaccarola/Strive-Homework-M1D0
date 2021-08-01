@@ -391,5 +391,12 @@ function ex37(){
 
 // 38. Write a JavaScript program to check the total marks of a student in various examinations. The student will get A+ grade if the total marks are in the range 89..100 inclusive, if the examination is "Final-exam." the student will get A+ grade and total marks must be greater than or equal to 90. Return true if the student get A+ grade or false otherwise.
 function ex38(){
-    
+    var a=Number(document.getElementById("ex38input1").value);
+    var b=Number(document.getElementById("ex38input2").value);
+    var c=Number(document.getElementById("ex38input3").value);
+    100>=a,b,c>=89?d=true:d=false;
+    document.getElementById("ex38markGrade").innerHTML=d;
+    var e=Number(document.getElementById("ex38input4").value);
+    e>=90?f=true:f=false;
+    document.getElementById("ex38finalExamGrade").innerHTML=f;
 };
