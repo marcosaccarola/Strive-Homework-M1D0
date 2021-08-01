@@ -416,3 +416,8 @@ function ex40(){
     var c=(a===8)||(b===8)||(a-b===8)||(b-a===8)||(a+b===8)?true:false;
     document.getElementById("ex40return").innerHTML=c;
 };
+
+// 41. Write a JavaScript program to check three given numbers, if the three numbers are same return 30 otherwise return 20 and if two numbers are same return 40.
+function ex41(){
+    
+};
