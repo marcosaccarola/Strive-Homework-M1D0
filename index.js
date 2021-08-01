@@ -369,19 +369,23 @@ function ex35b(){
 function ex36(){
     var a=Number(document.getElementById("ex36input1").value);
     var as=a.toString();
-    console.log(a);
     var b=Number(document.getElementById("ex36input2").value);
     var bs=b.toString();
-    console.log(b);
     var c=Number(document.getElementById("ex36input3").value);
     var cs=c.toString();
-    console.log(c);
     var d=as.charAt(as.length-1)===bs.charAt(bs.length-1)&&as.charAt(as.length-1)===cs.charAt(cs.length-1)?true:false;
-    console.log(d);
     document.getElementById("ex36result").innerHTML=d;
 };
 
 // 37. Write a JavaScript program to create new string with first 3 characters are in lower case from a given string. If the string length is less than 3 convert all the characters in upper case.
 function ex37(){
-    
+    var a=String(document.getElementById("ex37input").value);
+    if (a.length<4){
+        b=a.toUpperCase();
+        }else{
+            b=a.substr(0,3);
+            b=b.toLowerCase();
+        }
+    document.getElementById("ex37result").innerHTML=b;
+
 };
