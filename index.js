@@ -380,3 +380,8 @@ function ex36(){
     console.log(d);
     document.getElementById("ex36result").innerHTML=d;
 };
+
+// 37. Write a JavaScript program to create new string with first 3 characters are in lower case from a given string. If the string length is less than 3 convert all the characters in upper case.
+function ex37(){
+    
+};
