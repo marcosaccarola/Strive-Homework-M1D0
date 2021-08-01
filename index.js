@@ -322,3 +322,11 @@ function ex32(){
     var e=c>d?b:a;
     document.getElementById("ex32return").innerHTML=e;
 };
+
+// 33. Write a JavaScript program to check whether two numbers are in range 40..60 or in the range 70..100 inclusive.
+function ex33(){
+    var a=Number(document.getElementById("ex33input1").value);
+    var b=Number(document.getElementById("ex33input2").value);
+    var c=((40<=a&&a<=60)||(70<=a&&a<=100))&&((40<=b&&b<=60)||(70<=b&&b<=100))?true:false;
+    document.getElementById("ex33result").innerHTML=c;
+};
