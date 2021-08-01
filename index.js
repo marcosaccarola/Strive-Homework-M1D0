@@ -339,3 +339,8 @@ function ex34(){
     var d=c==true?Math.max(a,b):"Almost one of two numbers is not included in the given range."
     document.getElementById("ex34result").innerHTML=d;
 };
+
+// 35. Write a program to check whether a specified character exists within the 2nd to 4th position in a given string.
+function ex35(){
+
+};
