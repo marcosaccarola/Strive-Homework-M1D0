@@ -400,3 +400,8 @@ function ex38(){
     e>=90?f=true:f=false;
     document.getElementById("ex38finalExamGrade").innerHTML=f;
 };
+
+// 39. Write a JavaScript program to compute the sum of the two given integers, If the sum is in the range 50..80 return 65 other wise return 80.
+function ex39(){
+    
+};
