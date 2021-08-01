@@ -312,3 +312,13 @@ function ex31(){
     var d=Math.max(a,b,c);
     document.getElementById("ex31result").innerHTML=d;
 };
+
+// 32. Write a JavaScript program to find a value which is nearest to 100 from two different given integer values.
+function ex32(){
+    var a=Number(document.getElementById("ex32input1").value);
+    var b=Number(document.getElementById("ex32input2").value);
+    var c=Math.abs(a-100);
+    var d=Math.abs(b-100);
+    var e=c>d?b:a;
+    document.getElementById("ex32return").innerHTML=e;
+};
