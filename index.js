@@ -350,3 +350,8 @@ function ex35(){
     var f=b==c||b==d||b==e?true:false;
     document.getElementById("ex35result").innerHTML=f;
 };
+
+// 36. Write a JavaScript program to check whether the last digit of the three given positive integers is same.
+function ex36(){
+    
+};
