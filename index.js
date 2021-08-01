@@ -419,5 +419,15 @@ function ex40(){
 
 // 41. Write a JavaScript program to check three given numbers, if the three numbers are same return 30 otherwise return 20 and if two numbers are same return 40.
 function ex41(){
-    
+    var a=Number(document.getElementById("ex41in1").value);
+    var b=Number(document.getElementById("ex41in2").value);
+    var c=Number(document.getElementById("ex41in3").value);
+    if((a===b)&&(b===c)){
+        d=30;
+    }else if((a===b)||(b===c)||(a===c)){
+        d=40;
+    }else{
+        d=20;
+    }
+    document.getElementById("ex41return").innerHTML=d;
 };
