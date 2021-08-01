@@ -367,5 +367,16 @@ function ex35b(){
 
 // 36. Write a JavaScript program to check whether the last digit of the three given positive integers is same.
 function ex36(){
-
+    var a=Number(document.getElementById("ex36input1").value);
+    var as=a.toString();
+    console.log(a);
+    var b=Number(document.getElementById("ex36input2").value);
+    var bs=b.toString();
+    console.log(b);
+    var c=Number(document.getElementById("ex36input3").value);
+    var cs=c.toString();
+    console.log(c);
+    var d=as.charAt(as.length-1)===bs.charAt(bs.length-1)&&as.charAt(as.length-1)===cs.charAt(cs.length-1)?true:false;
+    console.log(d);
+    document.getElementById("ex36result").innerHTML=d;
 };
