@@ -330,3 +330,8 @@ function ex33(){
     var c=((40<=a&&a<=60)||(70<=a&&a<=100))&&((40<=b&&b<=60)||(70<=b&&b<=100))?true:false;
     document.getElementById("ex33result").innerHTML=c;
 };
+
+// 34. Write a JavaScript program to find the larger number from the two given positive integers, the two numbers are in the range 40..60 inclusive.
+function ex34(){
+    
+};
