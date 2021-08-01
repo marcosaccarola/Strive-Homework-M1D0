@@ -342,5 +342,11 @@ function ex34(){
 
 // 35. Write a program to check whether a specified character exists within the 2nd to 4th position in a given string.
 function ex35(){
-
+    var a=String(document.getElementById("ex35input1").value);
+    var b=String(document.getElementById("ex35input2").value);
+    var c=a.charAt(2-1);
+    var d=a.charAt(3-1);
+    var e=a.charAt(4-1);
+    var f=b==c||b==d||b==e?true:false;
+    document.getElementById("ex35result").innerHTML=f;
 };
