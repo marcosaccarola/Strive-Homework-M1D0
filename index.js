@@ -351,7 +351,21 @@ function ex35(){
     document.getElementById("ex35result").innerHTML=f;
 };
 
+// 35. Write a program to check whether a specified character exists within the 2nd to 4th position in a given string.
+function ex35b(){
+    var a=String(document.getElementById("ex35input1").value);
+    var b=String(document.getElementById("ex35input2").value);
+    var c=false;
+    for(let i=0; i<a.length; i++){
+        if ((a.charAt(i)==b)&&(i>0&&4>i)){
+            c=true;
+            break;
+        }
+    }
+    document.getElementById("ex35result").innerHTML=c;
+};
+
 // 36. Write a JavaScript program to check whether the last digit of the three given positive integers is same.
 function ex36(){
-    
+
 };
