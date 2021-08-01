@@ -333,5 +333,9 @@ function ex33(){
 
 // 34. Write a JavaScript program to find the larger number from the two given positive integers, the two numbers are in the range 40..60 inclusive.
 function ex34(){
-    
+    var a=Number(document.getElementById("ex34input1").value);
+    var b=Number(document.getElementById("ex34input2").value);
+    var c=((40<=a&&a<=60)&&(40<=b&&b<=60))?true:false;
+    var d=c==true?Math.max(a,b):"Almost one of two numbers is not included in the given range."
+    document.getElementById("ex34result").innerHTML=d;
 };
