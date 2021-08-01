@@ -408,3 +408,8 @@ function ex39(){
     var c=(50<=a+b)&&(a+b<=80)?65:80;
     document.getElementById("ex39return").innerHTML=c;
 };
+
+// 40. Write a JavaScript program to check from two given integers whether one of them is 8 or their sum or difference is 8
+function ex40(){
+    
+};
