@@ -403,5 +403,8 @@ function ex38(){
 
 // 39. Write a JavaScript program to compute the sum of the two given integers, If the sum is in the range 50..80 return 65 other wise return 80.
 function ex39(){
-    
+    var a=Number(document.getElementById("ex39input1").value);
+    var b=Number(document.getElementById("ex39input2").value);
+    var c=(50<=a+b)&&(a+b<=80)?65:80;
+    document.getElementById("ex39return").innerHTML=c;
 };
