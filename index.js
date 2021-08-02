@@ -437,3 +437,8 @@ function ex41(){
 function ex42(){
     
 };
+
+// 43. Write a JavaScript program to check from three given numbers (non negative integers) that two or all of them have the same rightmost digit.
+function ex43(){
+    
+};
