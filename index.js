@@ -501,5 +501,22 @@ function ex48(){
 
 // 49. Write a JavaScript program to replace every character in a given string with the character following it in the alphabet.
 function ex49(){
-    
+    var a=String(document.getElementById("ex49in").value);
+    var b=a.split("");
+    // var c="abcdefghijklmnopqrstuvwxyz";
+    // var d=b.split("");
+    // Caesar cipher:
+    for(var i=0;i<b.length;i++){
+        switch(b[i]){
+            case " ":
+                break;
+            case "z": b[i]="a";
+            break;
+            case "Z": b[i]="A";
+            break;
+            default:
+                b[i]=b.fromCharCode(1+b[i].charAt(0));
+        };
+    document.getElementById("ex49out").innerHTML=b;
+    };
 };
