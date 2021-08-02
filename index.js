@@ -481,3 +481,10 @@ function ex46(){
     var c=(a%7===0||a%11===0)&&(b%7!==0&&b%11!==0)||(b%7===0||b%11===0)&&(a%7!==0&&a%11!==0)?true:false;
     document.getElementById("ex46out").innerHTML=c;
 };
+
+// 47. Write a JavaScript program to check whether a given number is presents in the range 40..10000. For example 40 presents in 40 and 4000.
+function ex47(){
+    var a=Number(document.getElementById("ex47in").value);
+    var b=40<=a&&a<=10000?true:false;
+    document.getElementById("ex47out").innerHTML=b;
+};
