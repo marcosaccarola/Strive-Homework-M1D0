@@ -440,5 +440,19 @@ function ex42(){
 
 // 43. Write a JavaScript program to check from three given numbers (non negative integers) that two or all of them have the same rightmost digit.
 function ex43(){
-    
+    var a=Number(document.getElementById("ex43in1").value);
+    var b=Number(document.getElementById("ex43in2").value);
+    var c=Number(document.getElementById("ex43in3").value);
+    var rAll, r1, r2, r3;
+    rAll=r1=r2=r3="";
+    if (a%10===b%10,b%10===c%10){
+        rAll="the three numbers have the same rightmost digit";
+    }else{
+        a%10===b%10?r1="first and second have the same rightmost digit":r1="";
+        b%10===c%10?r1="second and third have the same rightmost digit":r2="";
+        a%10===c%10?r1="first and third have the same rightmost digit":r3="";
+    };
+    var d=rAll+r1+r2+r3;
+    document.getElementById("ex43out").innerHTML=d;
+
 };
