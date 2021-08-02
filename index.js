@@ -523,5 +523,11 @@ function ex49(){
 
 // 50. Write a JavaScript program to capitalize the first letter of each word of a given string.
 function ex50(){
-    
+    var a=String(document.getElementById("ex50in").value);
+    var b=a.split(" ");
+    for(i=0;i<b.length;i++){
+        b[i]=b[i][0].toUpperCase()+b[i].substr(1);
+    };
+    c=b.join(" ");
+    document.getElementById("ex50out").innerHTML=c;
 };
