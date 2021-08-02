@@ -459,5 +459,9 @@ function ex43(){
 
 // 44. Write a JavaScript program to check from three given integers that whether a number is greater than or equal to 20 and less than one of the others.
 function ex44(){
-    
+    var a=Number(document.getElementById("ex44in1").value);
+    var b=Number(document.getElementById("ex44in2").value);
+    var c=Number(document.getElementById("ex44in3").value);
+    var d=(a>=20&&(a>b||a>c))||(b>=20&&(b>a||b>c))||(c>=20&&(c>b||c>a))?true:false;
+    document.getElementById("ex44out").innerHTML=d;
 };
