@@ -491,5 +491,10 @@ function ex47(){
 
 // 48. Write a JavaScript program to reverse a given string.
 function ex48(){
-    
+    var a=String(document.getElementById("ex48in").value);
+    var b=a.split("");
+    var c=b.reverse();
+    var d=c.toString();
+    var e=d.replaceAll(",","");
+    document.getElementById("ex48out").innerHTML=e;
 };
