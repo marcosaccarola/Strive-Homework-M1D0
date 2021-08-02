@@ -488,3 +488,8 @@ function ex47(){
     var b=40<=a&&a<=10000?true:false;
     document.getElementById("ex47out").innerHTML=b;
 };
+
+// 48. Write a JavaScript program to reverse a given string.
+function ex48(){
+    
+};
