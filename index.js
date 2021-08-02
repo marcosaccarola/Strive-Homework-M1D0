@@ -468,5 +468,8 @@ function ex44(){
 
 // 45. Write a JavaScript program to check two given integer values and return true if one of the number is 15 or if their sum or difference is 15.
 function ex45(){
-    
+    var a=Number(document.getElementById("ex45in1").value);
+    var b=Number(document.getElementById("ex45in2").value);
+    var c=a===15||b===15||a+b===15||Math.abs(a-b)===15?true:false;
+    document.getElementById("ex45out").innerHTML=c;
 };
