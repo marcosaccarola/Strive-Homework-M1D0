@@ -465,3 +465,8 @@ function ex44(){
     var d=(a>=20&&(a>b||a>c))||(b>=20&&(b>a||b>c))||(c>=20&&(c>b||c>a))?true:false;
     document.getElementById("ex44out").innerHTML=d;
 };
+
+// 45. Write a JavaScript program to check two given integer values and return true if one of the number is 15 or if their sum or difference is 15.
+function ex45(){
+    
+};
