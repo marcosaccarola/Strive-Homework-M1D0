@@ -473,3 +473,8 @@ function ex45(){
     var c=a===15||b===15||a+b===15||Math.abs(a-b)===15?true:false;
     document.getElementById("ex45out").innerHTML=c;
 };
+
+// 46. Write a JavaScript program to check two given non-negative integers that whether one of the number (not both) is multiple of 7 or 11.
+function ex46(){
+    
+};
