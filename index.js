@@ -498,3 +498,8 @@ function ex48(){
     var e=d.replaceAll(",","");
     document.getElementById("ex48out").innerHTML=e;
 };
+
+// 49. Write a JavaScript program to replace every character in a given string with the character following it in the alphabet.
+function ex49(){
+    
+};
