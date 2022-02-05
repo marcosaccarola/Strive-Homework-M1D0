@@ -16,26 +16,39 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="index.css" />
-    <title>Strive-Homework-M1D0</title>
+    <title>Javascript basic exercises</title>
   </head>
-  <body>
-    <p>
-      1. Write a JavaScript program to display the current day and time in the
-      following format. <br />
-      Sample Output : Today is : Tuesday. <br />
-      Current time is : 10 PM : 30 : 38
-    </p>
-    <button onclick="ex1()">What day is today?</button>
-    <p id="ex1Day"></p>
-    <p id="ex1Time"></p>
-    <hr />
+  <body class="container bg-dark text-light">
 
+    <div class="my-5">
+      <h1>Javascript basic exercises</h1>
+    </div>
+
+    <div class="my-3">
+      <p>
+        1. Write a JavaScript program to display the current day and time in the
+        following format. <br />
+        Sample Output : Today is : Tuesday. <br />
+        Current time is : 10 PM : 30 : 38
+      </p>
+      <button onclick="ex1()">What day is today?</button>
+      <div class="my-3 text-success">
+        <p id="ex1Day"></p>
+        <p id="ex1Time"></p>
+      </div>
+      <hr />
+    </div>
+
+    <div class="my-3">
     <p>
       2. Write a JavaScript program to print the contents of the current window.
     </p>
     <button onclick="ex2()">Print this window!</button>
     <hr />
+    </div>
 
+
+    <div class="my-3">
     <p>
       3. Write a JavaScript program to get the current date. <br />
       Expected Output : <br />
@@ -44,7 +57,10 @@
     <button onclick="ex3()">Get the current date!</button>
     <p id="ex3"></p>
     <hr />
+    </div>
 
+
+    <div class="my-3">
     <p>
       4. Write a JavaScript program to find the area of a triangle where lengths
       of the three of its sides are 5, 6, 7.
@@ -55,7 +71,10 @@
     <button onclick="ex4(event)">Let's calculate!</button>
     <p id="ex4square"></p>
     <hr />
+    </div>
 
+
+    <div class="my-3">
     <p class="undone">
       5. (UNDONE) Write a JavaScript program to rotate the string 'w3resource'
       in right direction by periodically removing one letter from the end of the
@@ -64,14 +83,18 @@
     <input id="ex5input" type="text" />
     <button onclick="ex5()">Move last letter in first position!</button>
     <p id="ex5result"></p>
-    <button onclick="ex5bis()">Do it again!</button>
-
+    <button onclick="e
+    x5bis()">Do it again!</button>
+    <div class="my-3">
     <p>...and a program to reverse a word using arrays.</p>
     <input id="textToReverse" type="text" />
     <button onclick="ex5alt()">Reverse!</button>
     <p id="ex5alt"></p>
     <hr />
+    </div>
 
+    
+    <div class="my-3">
     <p>
       6. Write a JavaScript program to determine whether a given year is a leap
       year in the Gregorian calendar.
@@ -80,7 +103,10 @@
     <button onclick="ex6()">Check if it is a leap year!</button>
     <p id="ex6result"></p>
     <hr />
+    </div>
 
+    
+    <div class="my-3">
     <p class="undone">
       7. Write a JavaScript program to find 1st January is being a Sunday
       between 2014 and 2050.
@@ -89,7 +115,10 @@
     <button onclick="ex7()">Check if 1st Jan of this year is a Sunday!</button>
     <p id="ex7result"></p>
     <hr />
+    </div>
 
+    
+    <div class="my-3">
     <p>
       8. Write a JavaScript program where the program takes a random integer
       between 1 to 10, the user is then prompted to input a guess number. If the
@@ -107,14 +136,20 @@
     <p id="ex8randomNumber"></p>
     <p id="ex8return"></p>
     <hr />
+    </div>
 
+    
+    <div class="my-3">
     <p>
       9. Write a JavaScript program to calculate days left until next Christmas.
     </p>
     <button onclick="ex9()">How many days are left until Christmas?</button>
     <p id="ex9return"></p>
     <hr />
+    </div>
 
+    
+    <div class="my-3">
     <p>
       10. Write a JavaScript program to calculate multiplication and division of
       two numbers (input from user).
@@ -125,7 +160,10 @@
     <button onclick="ex10divide()">Divide.</button>
     <p id="ex10return"></p>
     <hr />
+    </div>
 
+    
+    <div class="my-3">
     <p>
       11. Write a JavaScript program to convert temperatures to and from
       Celsius, Fahrenheit.
@@ -140,7 +178,10 @@
     <button onclick="ex12()">Get the website URL!</button>
     <p id="ex12return"></p>
     <hr />
+    </div>
 
+    
+    <div class="my-3">
     <p>
       13. Write a JavaScript exercise to create a variable using a user-defined
       name.
@@ -158,13 +199,17 @@
     <button onclick="ex13()">Create the variable!</button>
     <p id="ex13return"></p>
     <hr />
-
+    
+    <div class="my-3">
     <p>14. Write a JavaScript exercise to get the extension of a filename.</p>
     <input id="ex14input" type="text" placeholder="write here filename" />
     <button onclick="ex14()">Click to get file's extension!</button>
     <p id="ex14result"></p>
     <hr />
+    </div>
 
+    
+    <div class="my-3">
     <p>
       15. Write a JavaScript program to get the difference between a given
       number and 13, if the number is greater than 13 return double the absolute
@@ -174,7 +219,10 @@
     <button onclick="ex15()">Click to get the difference!</button>
     <p id="ex15return"></p>
     <hr />
+    </div>
 
+    
+    <div class="my-3">
     <p>
       16. Write a JavaScript program to compute the sum of the two given
       integers. If the two values are same, then returns triple their sum.
@@ -184,7 +232,10 @@
     <button onclick="ex16()">Click to sum!</button>
     <p id="ex16return"></p>
     <hr />
+    </div>
 
+    
+    <div class="my-3">
     <p>
       17. Write a JavaScript program to compute the absolute difference between
       a specified number and 19. Returns triple their absolute difference if the
@@ -194,7 +245,10 @@
     <button onclick="ex17()">Let's calculate!</button>
     <p id="ex17return"></p>
     <hr />
+    </div>
 
+    
+    <div class="my-3">
     <p>
       18. Write a JavaScript program to check two given numbers and return true
       if one of the number is 50 or if their sum is 50.
@@ -204,7 +258,10 @@
     <button onclick="ex18()">Check it!</button>
     <p id="ex18return"></p>
     <hr />
+    </div>
 
+    
+    <div class="my-3">
     <p>
       19. Write a JavaScript program to check whether a given integer is within
       20 of 100 or 400.
@@ -213,7 +270,10 @@
     <button onclick="ex19()">Check!</button>
     <p id="ex19return"></p>
     <hr />
+    </div>
 
+    
+    <div class="my-3">
     <p>
       20. Write a JavaScript program to check from two given integers, whether
       one is positive and another one is negative.
@@ -223,7 +283,10 @@
     <button onclick="ex20()">Let's check!</button>
     <p id="ex20return"></p>
     <hr />
+    </div>
 
+    
+    <div class="my-3">
     <p>
       21. Write a JavaScript program to create a new string adding "Py" in front
       of a given string. If the given string begins with "Py" then return the
@@ -233,7 +296,10 @@
     <button onclick="ex21()">Pyfy!</button>
     <p id="ex21return"></p>
     <hr />
+    </div>
 
+    
+    <div class="my-3">
     <p>
       22. Write a JavaScript program to remove a character at the specified
       position of a given string and return the new string.
@@ -247,7 +313,10 @@
     <button onclick="ex22()">Remove!</button>
     <p id="ex22return"></p>
     <hr />
+    </div>
 
+    
+    <div class="my-3">
     <p>
       23. Write a JavaScript program to create a new string from a given string
       changing the position of first and last characters. The string length must
@@ -257,7 +326,10 @@
     <button onclick="ex23()">Invert first and last character!</button>
     <p id="ex23return"></p>
     <hr />
+    </div>
 
+    
+    <div class="my-3">
     <p>
       24. Write a JavaScript program to create a new string from a given string
       with the first character of the given string added at the front and back.
@@ -266,7 +338,10 @@
     <button onclick="ex24()">Let's add!</button>
     <p id="ex24result"></p>
     <hr />
+    </div>
 
+    
+    <div class="my-3">
     <p>
       25. Write a JavaScript program to check whether a given positive number is
       a multiple of 3 or a multiple of 7.
@@ -279,7 +354,8 @@
     <button onclick="ex25()">Check it!</button>
     <p id="ex25result"></p>
     <hr />
-
+    
+    <div class="my-3">
     <p>
       26. Write a JavaScript program to create a new string from a given string
       taking the last 3 characters and added at both the front and back. The
@@ -289,7 +365,8 @@
     <button onclick="ex26()">Let's add!</button>
     <p id="ex26return"></p>
     <hr />
-
+    
+    <div class="my-3">
     <p>
       27. Write a JavaScript program to check whether a string starts with
       'Java' and false otherwise.
@@ -298,7 +375,10 @@
     <button onclick="ex27()">Let's check!</button>
     <p id="ex27return"></p>
     <hr />
+    </div>
 
+    
+    <div class="my-3">
     <p>
       28. Write a JavaScript program to check whether two given integer values
       are in the range 50..99 (inclusive). Return true if either of them are in
@@ -309,7 +389,10 @@
     <button onclick="ex28()">Let's check it!</button>
     <p id="ex28return"></p>
     <hr />
+    </div>
 
+    
+    <div class="my-3">
     <p>
       29. Write a JavaScript program to check whether three given integer values
       are in the range 50..99 (inclusive). Return true if one or more of them
@@ -321,7 +404,10 @@
     <button onclick="ex29()">Let's checkit!</button>
     <p id="ex29return"></p>
     <hr />
+    </div>
 
+    
+    <div class="my-3">
     <p>
       30. Write a JavaScript program to check whether a string "Script" presents
       at 5th (index 4) position in a given string, if "Script" presents in the
@@ -332,7 +418,10 @@
     <button onclick="ex30()">Let's check it!</button>
     <p id="ex30return"></p>
     <hr />
+    </div>
 
+    
+    <div class="my-3">
     <p>
       31. Write a JavaScript program to find the largest of three given
       integers.
@@ -343,7 +432,10 @@
     <button onclick="ex31()">Let's check it!</button>
     <p id="ex31result"></p>
     <hr />
+    </div>
 
+    
+    <div class="my-3">
     <p>
       32. Write a JavaScript program to find a value which is nearest to 100
       from two different given integer values.
@@ -353,7 +445,10 @@
     <button onclick="ex32()">Let's check!</button>
     <p id="ex32return"></p>
     <hr />
+    </div>
 
+    
+    <div class="my-3">
     <p>
       33. Write a JavaScript program to check whether two numbers are in range
       40..60 or in the range 70..100 inclusive.
@@ -363,7 +458,10 @@
     <button onclick="ex33()">Let's check!</button>
     <p id="ex33result"></p>
     <hr />
+    </div>
 
+    
+    <div class="my-3">
     <p>
       34. Write a JavaScript program to find the larger number from the two
       given positive integers, the two numbers are in the range 40..60
@@ -374,7 +472,10 @@
     <button onclick="ex34()">Let's check!</button>
     <p id="ex34result"></p>
     <hr />
+    </div>
 
+    
+    <div class="my-3">
     <p>
       35. Write a program to check whether a specified character exists within
       the 2nd to 4th position in a given string.
@@ -387,7 +488,10 @@
       Let's check in a differet way (with "if" statement)!
     </button>
     <hr />
+    </div>
 
+    
+    <div class="my-3">
     <p>
       36. Write a JavaScript program to check whether the last digit of the
       three given positive integers is same.
@@ -398,7 +502,10 @@
     <button onclick="ex36()">Let's check!</button>
     <p id="ex36result"></p>
     <hr />
+    </div>
 
+    
+    <div class="my-3">
     <p>
       37. Write a JavaScript program to create new string with first 3
       characters are in lower case from a given string. If the string length is
@@ -408,7 +515,10 @@
     <button onclick="ex37()">Let's create!</button>
     <p id="ex37result"></p>
     <hr />
+    </div>
 
+    
+    <div class="my-3">
     <p>
       38. Write a JavaScript program to check the total marks of a student in
       various examinations. The student will get A+ grade if the total marks are
@@ -428,7 +538,10 @@
     <p id="ex38finalExamGrade"></p>
     <button onclick="ex38()">Let's calculate!</button>
     <hr />
+    </div>
 
+    
+    <div class="my-3">
     <p>
       39. Write a JavaScript program to compute the sum of the two given
       integers, If the sum is in the range 50..80 return 65 other wise return
@@ -439,7 +552,10 @@
     <button onclick="ex39()">Let's compute!</button>
     <p id="ex39return"></p>
     <hr />
+    </div>
 
+    
+    <div class="my-3">
     <p>
       40. Write a JavaScript program to check from two given integers whether
       one of them is 8 or their sum or difference is 8
@@ -449,7 +565,10 @@
     <button onclick="ex40()">Let's check!</button>
     <p id="ex40return"></p>
     <hr />
+    </div>
 
+    
+    <div class="my-3">
     <p>
       41. Write a JavaScript program to check three given numbers, if the three
       numbers are same return 30 otherwise return 20 and if two numbers are same
@@ -461,7 +580,10 @@
     <button onclick="ex41()">Let's check!</button>
     <p id="ex41return"></p>
     <hr />
+    </div>
 
+    
+    <div class="my-3">
     <p class="undone">
       42. Write a JavaScript program to check whether three given numbers are
       increasing in strict mode or in soft mode.
@@ -475,7 +597,10 @@
     <button onclick="ex42()">Let's check!</button>
     <p id="ex42return"></p>
     <hr />
+    </div>
 
+    
+    <div class="my-3">
     <p>
       43. Write a JavaScript program to check from three given numbers (non
       negative integers) that two or all of them have the same rightmost digit.
@@ -498,7 +623,10 @@
     <button onclick="ex43()">Let's check!</button>
     <p id="ex43out"></p>
     <hr />
+    </div>
 
+    
+    <div class="my-3">
     <p>
       44. Write a JavaScript program to check from three given integers that
       whether a number is greater than or equal to 20 and less than one of the
@@ -510,7 +638,10 @@
     <button onclick="ex44()">Let's check!</button>
     <p id="ex44out"></p>
     <hr />
+    </div>
 
+    
+    <div class="my-3">
     <p>
       45. Write a JavaScript program to check two given integer values and
       return true if one of the number is 15 or if their sum or difference is
@@ -521,7 +652,10 @@
     <button onclick="ex45()">Let's check!</button>
     <p id="ex45out"></p>
     <hr />
+    </div>
 
+    
+    <div class="my-3">
     <p>
       46. Write a JavaScript program to check two given non-negative integers
       that whether one of the number (not both) is multiple of 7 or 11.
@@ -531,7 +665,10 @@
     <button onclick="ex46()">Let's check!</button>
     <p id="ex46out"></p>
     <hr />
+    </div>
 
+    
+    <div class="my-3">
     <p>
       47. Write a JavaScript program to check whether a given number is presents
       in the range 40..10000. For example 40 presents in 40 and 4000.
@@ -540,13 +677,19 @@
     <button onclick="ex47()">Let's check</button>
     <p id="ex47out"></p>
     <hr />
+    </div>
 
+    
+    <div class="my-3">
     <p>48. Write a JavaScript program to reverse a given string.</p>
     <input type="text" placeholder="write a string here" id="ex48in" />
     <button onclick="ex48()">Let's reverse!</button>
     <p id="ex48out"></p>
     <hr />
+    </div>
 
+    
+    <div class="my-3">
     <p class="undone">
       49. Write a JavaScript program to replace every character in a given
       string with the character following it in the alphabet.
@@ -555,7 +698,10 @@
     <button onclick="ex49()">Let's replace!</button>
     <p id="ex49out"></p>
     <hr />
+    </div>
 
+    
+    <div class="my-3">
     <p>
       50. Write a JavaScript program to capitalize the first letter of each word
       of a given string.
@@ -564,6 +710,8 @@
     <button onclick="ex50()">Let's capitalize!</button>
     <p id="ex50out"></p>
     <hr />
+    </div>
+
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
