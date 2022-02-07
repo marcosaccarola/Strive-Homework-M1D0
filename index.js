@@ -112,10 +112,17 @@ function ex6() {
     document.getElementById("ex6result").innerHTML = b;
 }
 
-// 7. Write a JavaScript program to find 1st January is being a Sunday between 2014 and 2050.
-a = new Date();
-b = a.getDay();
-c = b === 0 ? true : false;
+// 7. Write a JavaScript program to find if 1st January is being a Sunday between 2014 and 2050.
+const ex7=()=>{
+    yearFromUI=document.getElementById('ex7input').value
+    dateFromYear=new Date(yearFromUI)
+    dayFromDate=dateFromYear.getDay();
+    console.log(dayFromDate)
+    result=dayFromDate===0
+        ?true
+        :false;
+    document.getElementById('ex7result').innerHTML=result
+}
 
 
 // for (var year = 2014; year <= 2050; year++)
