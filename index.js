@@ -59,33 +59,51 @@ function ex4() {
     var hp = (s1 + s2 + s3) / 2;
     var a = hp * (hp - s1) * (hp - s2) * (hp - s3); //Heron's formula
     var area = Math.sqrt(a);
-    document.getElementById("ex4square").innerHTML = area;
+    console.log(area)
+    if(a<0){
+        document.getElementById('ex4square').innerHTML='This is not a triangle.'
+    }else{
+        document.getElementById("ex4square").innerHTML = area;
+    }
 };
 
 
 // 5. Write a JavaScript program to rotate the string 'w3resource' in right direction by periodically removing one letter from the end of the string and attaching it to the front.
-function ex5() {
-    var a = String(document.getElementById("ex5input").value);
-    var b = a.slice(-1); // taking last letter
-    var c = a.slice(0, -1); // taking string without last letter (starting point, positon to remove)
-    var d = b.concat(c);
-    document.getElementById("ex5result").innerHTML = d;
-};
-function ex5bis() {
-    var a = String(document.getElementById("ex5result").value);
-    var b = a.slice(-1); // taking last letter
-    var c = a.slice(0, -1); // taking string without last letter (starting point, positon to remove)
-    var d = b.concat(c);
-    document.getElementById("ex5result").innerHTML = d;
+function ex5Right(){
+    let a=null
+    if(document.getElementById('ex5result')===null){
+        a=String(document.getElementById('ex5input').value)
+    }else{
+        a=String(document.getElementById('ex5result').getAttribute('placeholder'))
+        console.log(String(document.getElementById('ex5result').getAttribute('placeholder')))
+    }
+    let b=a.slice(-1)
+    let result=b.concat(a.slice(0,-1))
+    document.getElementById('output').innerHTML=`<p id="ex5result" placeholder='${result}' >${result}</p>`
 }
-// ...and a program to reverse a word using arrays.
-function ex5alt() {
-    var a = String(document.getElementById("textToReverse").value);
-    var b = a.split("");
-    var c = b.reverse();
-    var d = c.join();
-    document.getElementById("ex5alt").innerHTML = d;
-};
+
+// function ex5() {
+//     var a = String(document.getElementById("ex5input").value);
+//     var b = a.slice(-1); // taking last letter
+//     var c = a.slice(0, -1); // taking string without last letter (starting point, positon to remove)
+//     var d = b.concat(c);
+//     document.getElementById("ex5result").innerHTML = d;
+// };
+// function ex5bis() {
+//     var a = String(document.getElementById("ex5result").value);
+//     var b = a.slice(-1); // taking last letter
+//     var c = a.slice(0, -1); // taking string without last letter (starting point, positon to remove)
+//     var d = b.concat(c);
+//     document.getElementById("ex5result").innerHTML = d;
+// }
+// // ...and a program to reverse a word using arrays.
+// function ex5alt() {
+//     var a = String(document.getElementById("textToReverse").value);
+//     var b = a.split("");
+//     var c = b.reverse();
+//     var d = c.join();
+//     document.getElementById("ex5alt").innerHTML = d;
+// };
 
 // 6. Write a JavaScript program to determine whether a given year is a leap year in the Gregorian calendar.
 function ex6() {
@@ -531,3 +549,4 @@ function ex50(){
     c=b.join(" ");
     document.getElementById("ex50out").innerHTML=c;
 };
+

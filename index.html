@@ -15,12 +15,12 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Javascript basic exercises</title>
   </head>
-  <body class="container bg-dark text-light">
+  <body class="container bg-light text-dark">
 
-    <div class="my-5">
+    <div class="mt-3 mb-5">
       <h1>Javascript basic exercises</h1>
     </div>
 
@@ -32,6 +32,7 @@
         Current time is : 10 PM : 30 : 38
       </p>
       <button onclick="ex1()">What day is today?</button>
+
       <div class="my-3 text-success">
         <p id="ex1Day"></p>
         <p id="ex1Time"></p>
@@ -40,57 +41,66 @@
     </div>
 
     <div class="my-3">
-    <p>
-      2. Write a JavaScript program to print the contents of the current window.
-    </p>
-    <button onclick="ex2()">Print this window!</button>
-    <hr />
+      <p>
+        2. Write a JavaScript program to print the contents of the current window.
+      </p>
+      <button onclick="ex2()">Print this window!</button>
+
+      <hr />
     </div>
 
 
     <div class="my-3">
-    <p>
-      3. Write a JavaScript program to get the current date. <br />
-      Expected Output : <br />
-      mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy
-    </p>
-    <button onclick="ex3()">Get the current date!</button>
-    <p id="ex3"></p>
-    <hr />
+      <p>
+        3. Write a JavaScript program to get the current date. <br />
+        Expected Output : <br />
+        mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy
+      </p>
+      <button onclick="ex3()">Get the current date!</button>
+
+      <div class="my-3 text-success">
+        <p id="ex3"></p>
+      </div>
+      <hr />
     </div>
 
 
     <div class="my-3">
-    <p>
-      4. Write a JavaScript program to find the area of a triangle where lengths
-      of the three of its sides are 5, 6, 7.
-    </p>
-    <input id="s1" type="number" />
-    <input id="s2" type="number" />
-    <input id="s3" type="number" />
-    <button onclick="ex4(event)">Let's calculate!</button>
-    <p id="ex4square"></p>
-    <hr />
+      <p>
+        4. Write a JavaScript program to find the area of a triangle where lengths
+        of the three of its sides are 5, 6, 7.
+      </p>
+      <input id="s1" type="number" />
+      <input id="s2" type="number" />
+      <input id="s3" type="number" />
+      <button onclick="ex4(event)">Let's calculate!</button>
+
+      <div class="my-3 text-success">
+        <p id="ex4square"></p>
+      </div>
+      <hr />
     </div>
 
 
     <div class="my-3">
-    <p class="undone">
-      5. (UNDONE) Write a JavaScript program to rotate the string 'w3resource'
-      in right direction by periodically removing one letter from the end of the
-      string and attaching it to the front.
-    </p>
-    <input id="ex5input" type="text" />
-    <button onclick="ex5()">Move last letter in first position!</button>
-    <p id="ex5result"></p>
-    <button onclick="e
-    x5bis()">Do it again!</button>
-    <div class="my-3">
-    <p>...and a program to reverse a word using arrays.</p>
-    <input id="textToReverse" type="text" />
-    <button onclick="ex5alt()">Reverse!</button>
-    <p id="ex5alt"></p>
-    <hr />
+      <p>
+        5. Write a JavaScript program to rotate the string 'w3resource'
+        in right direction by periodically removing one letter from the end of the
+        string and attaching it to the front.
+      </p>
+      <input id="ex5input" type="text" />
+      <button onclick="ex5Right()">Move last letter in first position!</button>
+      <div class="my-3 text-success" id="output">
+        
+      </div>
+      <!-- <button onclick="ex5bis()">Do it again!</button> -->
+
+      <!-- <p>...and a program to reverse a word using arrays.</p>
+      <input id="textToReverse" type="text" />
+      <button onclick="ex5alt()">Reverse!</button> -->
+
+      <!-- <p id="ex5alt"></p> -->
+      <hr />
     </div>
 
     
