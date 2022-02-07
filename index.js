@@ -459,9 +459,18 @@ function ex41(){
 
 // 42. Write a JavaScript program to check whether three given numbers are increasing in strict mode or in soft mode.
 // Note: Strict mode -> 10, 15, 31 : Soft mode -> 24, 22, 31 or 22, 22, 31
-function ex42(){
-    
-};
+const ex42=()=>{
+    let input1=document.getElementById('ex42input1').value
+    let input2=document.getElementById('ex42input2').value
+    let input3=document.getElementById('ex42input3').value
+    if(input1===input2&&input2===input3){
+        document.getElementById('ex42result').innerHTML='The three numbers are not increasing because they have the same numeric value'
+    }else if(input1<input2&&input2<input3){
+        document.getElementById('ex42result').innerHTML='The three numbers are increasing in strict mode, because they are in order'
+    }else{
+        document.getElementById('ex42result').innerHTML='The three numbers are increasing in soft mode, because they are not in order'
+    }
+}
 
 // 43. Write a JavaScript program to check from three given numbers (non negative integers) that two or all of them have the same rightmost digit.
 function ex43(){
@@ -525,26 +534,43 @@ function ex48(){
 };
 
 // 49. Write a JavaScript program to replace every character in a given string with the character following it in the alphabet.
-function ex49(){
-    var a=String(document.getElementById("ex49in").value);
-    var b=a.split("");
-    // var c="abcdefghijklmnopqrstuvwxyz";
-    // var d=b.split("");
-    // Caesar cipher:
-    for(var i=0;i<b.length;i++){
-        switch(b[i]){
-            case " ":
-                break;
-            case "z": b[i]="a";
-            break;
-            case "Z": b[i]="A";
-            break;
-            default:
-                b[i]=b.fromCharCode(1+b[i].charAt(0));
-        };
-    document.getElementById("ex49out").innerHTML=b;
-    };
-};
+const ex49=()=>{
+    let stringFromUser=document.getElementById('ex49in').value
+    let arrayFromString=stringFromUser.split('')
+    let alphabet=('a b c d e f g h i j k l m n o p q r s t u v w x y z').split(' ')
+    const changedArray=[]
+    arrayFromString.forEach(e => {
+        const alphabeticalIndex=alphabet.indexOf(e) 
+        // const followLetterIndex=alphabeticalIndex+1
+        changedArray.push(alphabet[alphabeticalIndex+1])
+        console.log(changedArray.toString())
+        document.getElementById('ex49out').innerHTML=changedArray.join('')
+    });
+        
+    }
+    // console.log(alphabet)
+
+
+// function ex49(){
+//     var a=String(document.getElementById("ex49in").value);
+//     var b=a.split("");
+//     // var c="abcdefghijklmnopqrstuvwxyz";
+//     // var d=b.split("");
+//     // Caesar cipher:
+//     for(var i=0;i<b.length;i++){
+//         switch(b[i]){
+//             case " ":
+//                 break;
+//             case "z": b[i]="a";
+//             break;
+//             case "Z": b[i]="A";
+//             break;
+//             default:
+//                 b[i]=b.fromCharCode(1+b[i].charAt(0));
+//         };
+//     document.getElementById("ex49out").innerHTML=b;
+//     };
+// };
 
 // 50. Write a JavaScript program to capitalize the first letter of each word of a given string.
 function ex50(){
