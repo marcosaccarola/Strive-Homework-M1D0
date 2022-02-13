@@ -583,3 +583,9 @@ function ex50(){
     document.getElementById("ex50out").innerHTML=c;
 };
 
+// 51. Write a JavaScript program to convert a given number to hours and minutes.
+const ex51=()=>{
+    let minutes=document.getElementById('ex51in').value
+    document.getElementById('ex51out').innerHTML=parseInt(minutes/60)+':'+(minutes%60<10?'0'+minutes%60:minutes%60)
+}
+
